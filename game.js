@@ -11,32 +11,36 @@ function computerChoice(){
 console.log(computerChoice());
 
 let player = prompt("Enter your choice");
-let playerSelection = player.replaceAll();
+let playerSelection = player.toLowerCase();
 let computerSelection = computerChoice();
 
  function playRound(playerSelection,computerSelection){
-        if ( computerSelection == playerSelection){
-            return "It is a draw!";
-        }else if (computerSelection == "rock"){
-            return (playerSelection === "paper") ? "You win this round!" : "You loose Darling!"
-        }else if (computerSelection === "paper"){
-            return (playerSelection ==="scissors") ? "You win this round" : "you loose darling!"
-        }else if (computerSelection ==="scissors"){
-            return (playerSelection === "rock") ? "You win this round" : "you loose darling!"
+        if ( computerSelection === playerSelection){
+            console.log( "It is a draw!");
         }
-}
+            else if ((computerSelection==="rock" && playerSelection==="paper")){
+                console.log("Player wins!");
+            }
+                else if((computerSelection ==="paper")&&(playerSelection=== "scissors")){
+                    console.log ("Player Wins!");
+                }
+            else if((computerSelection ==="paper")&&(playerSelection=== "scissors")){
+                console.log ("Player Wins!");
+            }
+                else if ((computerSelection==="scissors")&&(playerSelection==="paper")){
+                    console.log ("Computer Wins!");
+                }
 
-console.log(playRound(playerSelection,computerSelection))
+            else if((computerSelection ==="scissors")&&(playerSelection=== "rock")){
+                    console.log ("Player Wins!");}  
+                    else if ((computerSelection==="rock")&&playerSelection==="scissors"){
+                        console.log("Computer wins");
+                    }                        
+ }
 
-function game(func,nTimes){
-    let i = 1;
-    for (i;i <= 5;i++){
-        playRound()
+console.log(playRound(playerSelection,computerSelection));
 
 
-    }
-}
-console.log(game(playRound(),5))
 
     
 

@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    font-family: 'Dancing Script', cursive;
+    color:#fff
+}
+.buttons{
+    margin-top: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.btn1,.btn2,.btn3{
+    margin-right: 10px;
+    padding:20px;
+    border-radius: 50%;
+    background-color:#000;
+    color:white;
+    cursor: pointer;
+}
+.content{
+    text-align: center;
+}
+h1{
+    font-weight: 700;
+}
