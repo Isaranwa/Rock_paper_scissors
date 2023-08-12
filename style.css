@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right, #434343 0%, black 100%);
+    background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
     font-family: 'Dancing Script', cursive;
     color:#fff
 }
@@ -9,16 +9,29 @@ body{
     justify-content: center;
     align-items:center;
 }
-.btn1,.btn2,.btn3{
+.container{
+    border:2px solid #000;
+    border-radius: 20px;
+    max-width: 600px;
+    margin-top: 50px;
+}
+#btn1,#btn2,#btn3{
     margin-right: 10px;
     padding:20px;
     border-radius: 50%;
     background-color:#000;
     color:white;
     cursor: pointer;
+    border:none;
+    margin-bottom: 10px;
 }
 .content{
     text-align: center;
+}
+#score{
+    text-align: center;
+    margin-top: 10px;
+    
 }
 h1{
     font-weight: 700;
