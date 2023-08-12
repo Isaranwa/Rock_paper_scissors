@@ -13,19 +13,21 @@
 <body>
     <div class="container">
         <div class="content mt-4">
-    <h1>Rock paper scissors</h1>
-    <h2>Player</h2>
-    <input type="text"class="rounded-5 shadow">
+    <h1>Rock, Paper, Scissors</h1>
+    <h2 id="player" >Player:</h2>
     <br>
-    <h2>Computer</h2>
-    <input type="text"class="rounded-5 shadow">
+    <h2 id="computer">Computer:</h2>
+    <br>
+    <h2  id="result">Result:</h2>
     </div>
-    <div class="buttons ">
-    <input type="button" value="Rock" class="btn1">
-    <input type="button" value="Paper"class="btn2">
-    <input type="button" value="Scissors"class="btn3">
+    <div class="buttons">
+    <button id="btn1"class="choiceBtn">rock</button> 
+    <button id="btn2"class="choiceBtn">paper</button>
+    <button id="btn3"class="choiceBtn">scissors</button>
+    <h1 id="round"></h1>
     </div>
     </div>
+    <h2 id="score"></h2>
     <script src="game.js"> </script>
 </body>
 </html>
